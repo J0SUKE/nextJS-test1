@@ -1,10 +1,9 @@
 import Link from 'next/link';
 
 export default function Country({data}) {
-    console.log(data);
     return(
         <main>
-            <h1>{data[0].name.common}</h1>
+            <h1>{data[0]?.name?.common}</h1>
             <p>
                 <Link href="/">
                     <a>Back home</a>
